@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Bokor&family=IM+Fell+English:ital@0;1&family=Pirata+One&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
@@ -43,7 +44,15 @@ body {
   min-height: 100%;
 }
 
-body {
+.header-image {
+  background-position: 52% 30%;
+  background-image: url("./assets/cover/cover-image.png");
+  height: 350px;
+  background-size: 170%;
+  filter: grayscale(80);
+}
+
+/* body {
   margin: 0;
   padding: 0;
   font-weight: 600;
@@ -306,4 +315,4 @@ a {
 
 .navActive {
   color: var(--secondary);
-}
+} */
