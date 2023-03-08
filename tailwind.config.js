@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     colors: {
       'cosmic-latte': '#FFF7EB',
+      'platinum':
+      '#EDE9E9',
       'tea-green': '#BDD8A3',
       'cinerous': '#9B8882',
       'black-olive': '#403D39',

@@ -1,15 +1,15 @@
 import React from "react";
-import dark_logo from "../../assets/small/logo/dark_logo.png";
+import sc_logo from "../../assets/small/logo/sc_logo-nobg.png";
 
 function Nav() {
   return (
-    <header className="m-0">
+    <header className="m-0 header-image lg:h-80 md:h-48 sm:h-32 overflow-hidden">
       <nav
-        className="relative flex w-full bg-cosmic-latte py-2 md:flex-wrap md:justify-start"
+        className="inline-flex w-full py-2 md:flex-wrap"
         data-te-navbar-ref
       >
-        <div className="flex w-full flex-wrap justify-between px-6">
-          <div className="flex">
+        <div className="inline-flex flex-wrap px-6">
+          <div className="inline-flex ">
             <button
               className="mr-2 border-0 bg-transparent py-2 text-xl leading-none transition-shadow duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 dark:hover:text-white dark:focus:text-white lg:hidden"
               type="button"
@@ -38,17 +38,17 @@ function Nav() {
             </button>
           </div>
           <div
-            className="!visible hidden grow basis-[100%] lg:!flex lg:basis-auto"
+            className="!visible hidden grow basis-[100%] lg:!inline-flex lg:basis-auto justify-between align-middle"
             id="navbarSupportedContentX"
             data-te-collapse-item
           >
             <ul
-              className="mr-auto flex flex-col lg:flex-row"
+              className="mr-auto inline-flex flex-col lg:flex-row"
               data-te-navbar-nav-ref
             >
               <li data-te-nav-item-ref>
                 <a
-                  className="block transition duration-150 ease-in-out font-pirata hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                  className="block transition duration-150 ease-in-out font-pirata text-xl text-black hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                   href="#!"
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -59,7 +59,7 @@ function Nav() {
               </li>
               <li data-te-nav-item-ref>
                 <a
-                  className="block transition duration-150 ease-in-out font-pirata hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                  className="block transition duration-150 ease-in-out font-pirata text-xl hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                   href="#!"
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -70,7 +70,7 @@ function Nav() {
               </li>
               <li data-te-nav-item-ref>
                 <a
-                  className="block transition duration-150 ease-in-out font-pirata hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                  className="block transition duration-150 ease-in-out font-pirata text-xl hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                   href="#!"
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -81,7 +81,7 @@ function Nav() {
               </li>
               <li data-te-nav-item-ref>
                 <a
-                  className="block transition duration-150 ease-in-out font-pirata hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
+                  className="block transition duration-150 ease-in-out font-pirata text-xl hover:text-goldenrod focus:text-tea-green disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
                   href="#!"
                   data-te-nav-link-ref
                   data-te-ripple-init
@@ -93,7 +93,7 @@ function Nav() {
             </ul>
           </div>
         </div>
-        <div className="flex">
+        <div className="inline-block items-center">
           <a
             className="block transition duration-150 ease-in-out hover:text-neutral-700 focus:text-neutral-700 disabled:text-black/30 dark:hover:text-white dark:focus:text-white lg:p-2 [&.active]:text-black/90"
             href="#!"
@@ -102,15 +102,19 @@ function Nav() {
             data-te-ripple-color="light"
           >
             <img
-              src={dark_logo}
-              className="app-logo md:h-10 md:w-10 border rounded-full"
+              src={sc_logo}
+              className="md:h-11 md:w-11 sm:h-7 sm:w-7 justify-end"
               alt="logo"
             ></img>
           </a>
         </div>
       </nav>
 
-      <div className="relative overflow-hidden bg-no-repeat header-image bg-cosmic-latte"></div>
+      <div className="relative inline-flex  align-middle">
+         <h1 className="font-zen font-medium text-9xl tracking-widest align-middle">
+            
+        </h1>
+      </div>
     </header>
   );
 }
